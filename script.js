@@ -141,10 +141,10 @@ dataArray = new Uint8Array(analyser.frequencyBinCount);
 
 if(music.paused){
 music.play();
-playBtn.textContent="Pausar canción 💙";
+playBtn.textContent="Pausar";
 }else{
 music.pause();
-playBtn.textContent="Reproducir canción 💙";
+playBtn.textContent="💛";
 }
 
 });
