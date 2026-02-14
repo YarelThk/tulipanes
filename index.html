@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sorpresa</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="hero">
+
+    <!-- TEXTO -->
+    <div class="text-box">
+        <h1>Feliz San Valentín 💛</h1>
+        <p>
+            Te quiero con todo mi ser mi indunena.<br>
+            Siempre quiero estar contigo.
+        </p>
+        <button id="playBtn">💛💛</button>
+        <audio id="music" src="music.mp3"></audio>
+    </div>
+
+
+    <!-- RAMO -->
+    <svg class="bouquet" viewBox="0 0 900 1200">
+
+        <defs>
+
+            <!-- Degradados -->
+            <radialGradient id="petalBlue" cx="50%" cy="40%">
+                <stop offset="0%" stop-color="#f0f8ff"/>
+                <stop offset="100%" stop-color="#7ec8ff"/>
+            </radialGradient>
+
+            <radialGradient id="centerYellow">
+                <stop offset="0%" stop-color="#fff6c0"/>
+                <stop offset="100%" stop-color="#ffcc33"/>
+            </radialGradient>
+
+            <linearGradient id="tulipYellow" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#fff6a9"/>
+                <stop offset="100%" stop-color="#ffd86b"/>
+            </linearGradient>
+
+            <!-- Glow -->
+            <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+                <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+                <feMerge>
+                    <feMergeNode in="coloredBlur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+            </filter>
+
+        </defs>
+
+        <!-- TALLOS MÁS TUPIDOS -->
+
+
+
+
+<!-- HOJAS (AHORA CONECTADAS A LOS TALLOS) -->
+<g fill="#3fa96e">
+
+    <!-- Hoja izquierda -->
+    <path d="M380 850 
+             C340 820 340 900 400 880 
+             C390 860 390 860 380 850 Z"/>
+
+    <!-- Hoja derecha -->
+    <path d="M520 850 
+             C560 820 560 900 500 880 
+             C510 860 510 860 520 850 Z"/>
+
+</g>
+
+
+        <!-- FLORES -->
+        <g id="flowers" filter="url(#softGlow)"></g>
+    </svg>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
